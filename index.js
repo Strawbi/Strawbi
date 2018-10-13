@@ -11,9 +11,9 @@ bot.registry.registerCommandsIn(__dirname + "/commands");
 
 
 bot.on("message", function(message){
-    if(message.content == "cmds")
+    if(message.content == "ping")
     {
-        message.reply("Hello.");
+        message.reply("pong");
 
     }
 
@@ -21,7 +21,7 @@ bot.on("message", function(message){
 
 bot.on("ready", function(){
     console.log("Ready to use!")
-    bot.user.setActivity('Hey', { 
+    bot.user.setActivity('?help | Strawbi', { 
         //'type': 'STREAMING', 
         //'url': 'https://www.twitch.tv/oocakey' 
     });
